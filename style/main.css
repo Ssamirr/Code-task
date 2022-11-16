@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Space+Grotesk:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.space-grotesk {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main {
+    display: flex;
+}
+
+.img-section {
+    position: relative;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 69px;
+    left: 79px;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+.img-text h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.img-text p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 119px;
+}
+
+.brand span {
+    margin-left: 5px;
+}
+
+.user-greeting {
+    margin-bottom: 46px;
+    white-space: nowrap;
+}
+
+.user-greeting div:first-child {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 5px;
+}
+
+.user-greeting div:last-child {
+    font-size: 20px;
+}
+
+.right-side {
+    width: 100%;
+    padding: 80px 127px;
+}
+
+.login-google {
+    margin-bottom: 32px;
+}
+
+.login-google button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    background: white;
+    justify-content: center;
+    width: 430px;
+    border-radius: 6px;
+    padding: 20px 12px;
+    cursor: pointer;
+}
+
+.login-google span {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 430px;
+}
+
+.line span:first-child,
+.line span:last-child {
+    width: 200px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.line span:nth-child(2) {
+    font-size: 20px;
+    color: #7A7A7A;
+    margin: 0px 5px;
+}
+
+.login-section .form-input {
+    width: 430px;
+    border-bottom: 1px solid #D9D9D9;
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+}
+
+.login-section .form-input:first-child {
+    margin-bottom: 16px;
+}
+
+.login-section .form-input label {
+    font-size: 20px;
+}
+
+.login-section .form-input input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+}
+
+.form-additions {
+    display: flex;
+    width: 430px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 61px;
+}
+
+.form-additions div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.form-additions div:last-child a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.form-submit {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.form-submit button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    background: #060606;
+    color: white;
+    justify-content: center;
+    width: 430px;
+    border-radius: 6px;
+    padding: 20px 12px;
+    cursor: pointer;
+}
+
+.last-sect {
+    font-size: 16px;
+    width: 430px;
+    display: flex;
+    justify-content: center;
+}
+
+.last-sect div:last-child a {
+    font-weight: 500;
+    text-decoration: underline;
+    color: #000000;
+}
+
+@media (max-width: 1023px) {
+    .main {
+        display: block;
+    }
+
+    .right-side {
+        padding-left: 0px;
+        padding-bottom: 0px;
+        width: 430px;
+        margin: auto;
+    }
+
+    .img-section img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .right-side{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main {
+        width: 100%;
+    }
+
+    .img-text {
+        left: 23px;
+    }
+
+    .img-text h1 {
+        font-size: 30px;
+    }
+
+    .img-text p,
+    .brand,
+    .user-greeting div:last-child,
+    .user-greeting div:last-child,
+    .line span:nth-child(2),
+    .login-section .form-input label,
+    .form-submit,
+    .form-submit {
+        font-size: 15px;
+    }
+
+    .user-greeting div:first-child {
+        font-size: 28px;
+    }
+
+    .login-google button,
+    .line,
+    .login-section .form-input,
+    .form-additions,
+    .form-submit button,.last-sect,.right-side {
+        width: 240px;
+    }
+
+    .line span:first-child,
+    .line span:last-child {
+        width: 107.5px;
+    }
+
+    .right-side{
+        padding: 20px 0px;
+    }
+    .brand{
+        margin-bottom: 40px;
+    }
+
+    .form-additions,.last-sect{
+        display: block;
+    }
+
+    .form-additions div:first-child,.last-sect div:first-child{
+        margin-bottom: 5px;
+    }
+
+    .user-greeting,.login-google,.line,.form-additions{
+        margin-bottom: 20px;
+    }
+}
